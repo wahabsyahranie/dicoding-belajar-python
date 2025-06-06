@@ -100,5 +100,42 @@ x = {1,2,7,1,24,5}
 x = {1,2,7,1,24,5,24,5}
 print(x)
 
-#set adalah himpunan dalam matematika, berarti kita dapat melakukan operasi union (gabungan)
+#set adalah himpunan dalam matematika, berarti kita dapat melakukan operasi union (gabungan) dan intersection (irisan)
+set1 = {1, 2, 3, 4, 5}
+set2 = {4, 5, 6, 7, 8}
 
+union = set1.union(set2)
+print("Union:", union)
+
+intersection = set1.intersection(set2)
+print("Intersection:", intersection)
+
+#dictionary
+x = {'name': 'emcy', 'age' : 8, 'isMarried' : False}
+print(type(x))
+#pengambilan nilai pada dictionary harus mengetahui key nya
+print(x['name'])
+#menambahkan nilai pada dictionary
+x['job'] = 'Web Developer'
+print(x)
+#mengahpus nilai pada dictionary
+del x['isMarried']
+print(x)
+#mengubah nilai pada dictionary
+x['name'] = 'Dicoding'
+print(x)
+
+#konversi data
+print(float(5))
+print(int(-5.6))
+print(int("25"))
+print(str(25))
+print(float("25"))
+print(str(2.5))
+print(set([1, 2, 3]))
+print(tuple({1, 3, 5}))
+print(list('hello'))
+#konversi ke dictionary, data harus memiliki key-value
+print(dict([[1,2], [3,4]]))
+#konversi list dari beberapa tuple
+print(dict([(3, 26), (6, 19)]))
